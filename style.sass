@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap')
+
+$red: hsl(0, 100%, 74%)
+$green: hsl(154, 59%, 51%)
+$blue: hsl(248, 32%, 49%)
+$dark-blue: hsl(249, 10%, 26%)
+$grayish-blue: hsl(246, 25%, 77%)
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+body
+  font-family: 'Poppins', sans-serif
+  font-weight: 400
+  font-size: 1rem
+  background-image: url(images/bg-intro-desktop.png)
+  background-color: $red
+  background-size: cover
+  display: flex
+  justify-content: center
+  align-items: center 
+  flex-direction: column
+  height: auto
+
+  @media(max-width: 450px)
+    background-image: url(images/bg-intro-mobile.png)
+    background-size: cover
+
+.container
+  display: flex
+  max-width: 1400px
+  width: 100%
+
+  @media(max-width: 860px)
+    flex-direction: column
+
+  .text-content
+    flex: 1
+    padding: 3rem
+    max-width: 750px
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    @media(max-width: 860px)
+      align-items: center
+      margin: 40px auto
+
+    h1
+      color: #fff
+      font-size: 3rem
+      max-width: 450px
+      width: 100%
+      line-height: 1.2
+      margin-bottom: 25px
+      font-weight: 700
+
+    .experience
+      max-width: 500px
+      width: 100%
+      font-size: 1rem
+      font-weight: 500
+      color: #fff
+
+  .form-container
+    flex: 1
+    padding: 3.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    @media(max-width: 1024px)
+      margin: 50px auto
+
+    @media(max-width: 860px)
+      margin: -50px auto
+
+    .trail
+      background-color: $blue
+      padding: 1.4rem
+      border-radius: 0.8rem
+      width: 100%
+      max-width: 750px
+      margin-bottom: 20px
+      box-shadow: 0 8px #DA6666
+      color: $grayish-blue
+      font-weight: 500
+      text-align: center
+
+      span
+        font-weight: 600
+        color: #fff
+
+    form
+      width: 100%
+      max-width: 600px
+      background-color: #fff
+      padding: 3rem
+      border-radius: 0.8rem
+      box-shadow: 0 8px #DA6666
+
+      input
+        width: 100%
+        padding: 1.2rem
+        background-color: transparent
+        color: $dark-blue
+        font-family: inherit
+        font-weight: 600
+        font-size: 1rem
+        border-radius: 8px
+        border: 1px solid $grayish-blue
+        margin-bottom: 1.5rem
+        transition: 0.3s ease
+        outline: none
+        position: relative
+
+        &:hover,
+        &:focus
+          border-color: $blue
+
+        &.error
+          border-color: $red
+
+      button
+        width: 100%
+        padding: 1.2rem
+        font-family: inherit
+        font-weight: 600
+        font-size: 1rem
+        cursor: pointer
+        border-radius: 8px
+        border: none
+        background-color: $green
+        color: lighten($grayish-blue, 50%)
+        text-transform: uppercase
+        letter-spacing: 2px
+        box-shadow: 0 5px #32B87A
+        margin-bottom: 1.5rem
+        transition: 0.3s ease
+
+        &:hover
+          background-color: darken($green, 10%)
+
+      .terms
+        font-size: 0.85rem
+        text-align: center
+        color: $grayish-blue
+        font-weight: 600
+
+        span
+          color: $red
+          cursor: pointer
+
+      .error-message
+        color: $red
+        margin: -1rem 0 0.8rem 0
+        font-style: italic
+        float: right
+        font-weight: 500
+        font-size: 0.8rem
+
+      .error-icon
+        position: relative
+        right: -93%
+        top: -11%
+        transform: translateY(-50%)
+        width: 20px
+        height: 20px
+        background: url(images/icon-error.svg) no-repeat center center
+        background-size: contain
+        visibility: hidden
+
+        &.visible
+          visibility: visible
+
+footer
+  font-size: 0.9rem
+  text-align: center 
+  color: #fff
+  font-weight: 500
+  margin: 10px auto
+  
+  a,
+  a:visited
+    color: darken($blue, 30%)
+    text-decoration: none

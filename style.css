@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+@media (max-width: 450px) {
+  body {
+    background-image: url(images/bg-intro-mobile.png);
+    background-size: cover;
+  }
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+}
+@media (max-width: 860px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .text-content {
+  flex: 1;
+  padding: 3rem;
+  max-width: 750px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 860px) {
+  .container .text-content {
+    align-items: center;
+    margin: 40px auto;
+  }
+}
+.container .text-content h1 {
+  color: #fff;
+  font-size: 3rem;
+  max-width: 450px;
+  width: 100%;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.container .text-content .experience {
+  max-width: 500px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+.container .form-container {
+  flex: 1;
+  padding: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .container .form-container {
+    margin: 50px auto;
+  }
+}
+@media (max-width: 860px) {
+  .container .form-container {
+    margin: -50px auto;
+  }
+}
+.container .form-container .trail {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px #DA6666;
+  color: hsl(246, 25%, 77%);
+  font-weight: 500;
+  text-align: center;
+}
+.container .form-container .trail span {
+  font-weight: 600;
+  color: #fff;
+}
+.container .form-container form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 8px #DA6666;
+}
+.container .form-container form input {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: transparent;
+  color: hsl(249, 10%, 26%);
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid hsl(246, 25%, 77%);
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+  outline: none;
+  position: relative;
+}
+.container .form-container form input:hover, .container .form-container form input:focus {
+  border-color: hsl(248, 32%, 49%);
+}
+.container .form-container form input.error {
+  border-color: hsl(0, 100%, 74%);
+}
+.container .form-container form button {
+  width: 100%;
+  padding: 1.2rem;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 5px #32B87A;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+.container .form-container form button:hover {
+  background-color: #2ba671;
+}
+.container .form-container form .terms {
+  font-size: 0.85rem;
+  text-align: center;
+  color: hsl(246, 25%, 77%);
+  font-weight: 600;
+}
+.container .form-container form .terms span {
+  color: hsl(0, 100%, 74%);
+  cursor: pointer;
+}
+.container .form-container form .error-message {
+  color: hsl(0, 100%, 74%);
+  margin: -1rem 0 0.8rem 0;
+  font-style: italic;
+  float: right;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+.container .form-container form .error-icon {
+  position: relative;
+  right: -93%;
+  top: -11%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url(images/icon-error.svg) no-repeat center center;
+  background-size: contain;
+  visibility: hidden;
+}
+.container .form-container form .error-icon.visible {
+  visibility: visible;
+}
+
+footer {
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  margin: 10px auto;
+}
+footer a,
+footer a:visited {
+  color: #252140;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
