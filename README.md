@@ -37,12 +37,12 @@ Users should be able to:
 
 **Mobile Design**
 
-<img src="design/mobile-design.png" width="500" height="300" alt="Mobile Design">
+<img src="design/mobile-design.png"  height="900" alt="Mobile Design">
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-FPF9U-dqaB)
+- Live Site URL: [Live Site](https://yashi-singh-9.github.io/Intro-component-with-sign-up-form/)
 
 ## My process
 
@@ -139,7 +139,7 @@ In this project, I used Sass (SCSS syntax) to manage the styles. Here's how you 
 
 ### Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Yashi-Singh-9)
+- Frontend Mentor - [@Yashi-Singh-9](https://www.frontendmentor.io/profile/Yashi-Singh-9)
 - LinkedIn - [Yashi Singh](https://www.linkedin.com/in/yashi-singh-b4143a246)
 
 ## Acknowledgments
