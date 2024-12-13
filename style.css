@@ -178,6 +178,11 @@ body {
   background-size: contain;
   visibility: hidden;
 }
+@media (max-width: 768px) {
+  .container .form-container form .error-icon {
+    transform: translate(-10px, -65px);
+  }
+}
 .container .form-container form .error-icon.visible {
   visibility: visible;
 }
